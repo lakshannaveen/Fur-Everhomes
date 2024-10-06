@@ -72,6 +72,27 @@
   transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
+#carouselExample {
+  max-width: 800px; /* Set maximum width */
+  max-height: 600px; /* Set maximum height */
+  margin: 0 auto; /* Center the carousel */
+}
+
+/* Adjust the size of images inside the carousel */
+#carouselExample .carousel-item img {
+  object-fit: cover; /* Ensures the images cover the entire area */
+  width: 100%; /* Images take full width of the container */
+  height: 300px; /* Set height to match the carousel size */
+}
+@media (max-width: 768px) {
+  #carouselExample {
+    max-width: 100%; /* Full width on smaller screens */
+    max-height: 200px; /* Reduce height on smaller screens */
+  }
+  #carouselExample .carousel-item img {
+    height: 200px; /* Reduce image height for mobile */
+  }
+}
 
 .footer-upper {
   background-color: #275c90;
